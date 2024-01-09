@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
     <title>Retro Story</title>
 </head>
 
@@ -14,7 +15,28 @@
             <h1>Retro Love Story</h1>
         </header>
 
-        <section>
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li><img src="https://i.ibb.co/VJsZJSL/IMG-20231123-194257-488.jpg" alt="Image 1"></li>
+                    <li><img src="https://i.ibb.co/3R2TcDP/IMG-20231123-194241-486.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/bWt8JBQ/IMG-20231123-194259-331.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/qMGgbF9/IMG-20231123-194303-410.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/TRYBcSD/IMG-20231123-194311-230.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/R4SD6bN/IMG-20231123-194310-727.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/NsGpdmM/IMG-20231209-214244-551.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/djD0xB6/IMG-20231219-194004-553.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/QkNZPQG/IMG-20231219-194000-113.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/8z7917C/IMG-20231219-193744-839.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/mCxGzrp/IMG-20231219-194000-027.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/8z7917C/IMG-20231219-193744-839.jpg" alt="Image 2"></li>
+                    <li><img src="https://i.ibb.co/mCNHXwK/IMG-20231219-193743-018.jpg" alt="Image 2"></li>
+                    <!-- Add more image slides here -->
+                </ul>
+            </div>
+        </div>
+
+        <section id="story">
             <p>Underneath the starlit sky, Sam and Nikita found solace in each other's arms...</p>
             <!-- Add the entire story here -->
         </section>
@@ -23,6 +45,11 @@
             <p>&copy; 2024 Retro Love Story</p>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js"></script>
+    <script>
+        new Glide('.glide').mount();
+    </script>
 </body>
 
 </html>
